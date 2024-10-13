@@ -111,7 +111,6 @@ function Get-WebCamImage {
     using System.Data; 
     using System.Drawing; 
     using System.Windows.Forms; 
-     
     namespace WebCamLib 
     { 
         public class Device 
@@ -126,11 +125,9 @@ function Get-WebCamImage {
             private const int WM_CAP_SET_SCALE = 0x435; 
             private const int WS_CHILD = 0x40000000; 
             private const int WS_VISIBLE = 0x10000000; 
-     
             [DllImport("avicap32.dll")] 
             protected static extern int capCreateCaptureWindowA([MarshalAs(UnmanagedType.VBByRefStr)] ref string lpszWindowName, 
                 int dwStyle, int x, int y, int nWidth, int nHeight, int hWndParent, int nID); 
-     
             [DllImport("user32", EntryPoint = "SendMessageA")] 
             protected static extern int SendMessage(int hwnd, int wMsg, int wParam, [MarshalAs(UnmanagedType.AsAny)] object lParam); 
      
@@ -233,14 +230,13 @@ function Get-WebCamImage {
                 return (Device)devices[deviceIndex]; 
             } 
         } 
-    } 
-    "@
+    }"@
            
-       Add-Type -AssemblyName System.Drawing  
-       $jpegCodec = [Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() |   
-       Where-Object { $_.FormatDescription -eq "JPEG" }  
+    Add-Type -AssemblyName System.Drawing  
+    $jpegCodec = [Drawing.Imaging.ImageCodecInfo]::GetImageEncoders() |   
+    Where-Object { $_.FormatDescription -eq "JPEG" }  
         
-       Add-Type -TypeDefinition $source -ReferencedAssemblies System.Windows.Forms, System.Data, System.Drawing 
+    Add-Type -TypeDefinition $source -ReferencedAssemblies System.Windows.Forms, System.Data, System.Drawing 
      
      
      
