@@ -1,5 +1,17 @@
 # PERSEUS: Malware Project
 
+```
+   ██▓███  ▓█████  ██▀███    ██████ ▓█████ █    ██  ██████ 
+  ▓██░  ██▒▓█   ▀ ▓██ ▒ ██▒▒██    ▒ ▓█   ▀ ██  ▓██▒██    ▒ 
+  ▓██░ ██▓▒▒███   ▓██ ░▄█ ▒░ ▓██▄   ▒███  ▓██  ▒██░ ▓██▄   
+  ▒██▄█▓▒ ▒▒▓█  ▄ ▒██▀▀█▄    ▒   ██▒▒▓█  ▄▓▓█  ░██░ ▒   ██▒
+  ▒██▒ ░  ░░▒████▒░██▓ ▒██▒▒██████▒▒░▒████▒▒█████▓▒██████▒▒
+  ▒▓▒░ ░  ░░░ ▒░ ░░ ▒▓ ░▒▓░▒ ▒▓▒ ▒ ░░░ ▒░ ░▒▓▒ ▒ ▒▒ ▒▓▒ ▒ ░
+  ░▒ ░      ░ ░  ░  ░▒ ░ ▒░░ ░▒  ░ ░ ░ ░  ░░▒░ ░ ░░ ░▒  ░ ░
+  ░░          ░     ░░   ░ ░  ░  ░     ░   ░░░ ░ ░░  ░  ░  
+              ░  ░   ░           ░     ░  ░  ░          ░  
+```
+
 ## Overview
 In this project, I am building a Remote Access Tool (RAT), also referred to as Command and Control (C2). This tool is designed for remote administration and includes multiple functionalities to facilitate extensive system control and data exfiltration.
 
