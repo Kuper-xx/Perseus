@@ -12,9 +12,11 @@ function randomText {
 
 $wd = randomText
 $path = "$env:temp/$wd"
-echo $path
+$initial_dir = %cd%
 
 mkdir $path
 cd $path
 echo "Te fuiste recontra hackeado xd" > poc.txt
-cd C:\Users\Juan\Desktop\Perseus\files
+cd $initial_dir
+
+del installer.ps1

