@@ -16,5 +16,5 @@ echo $path
 
 mkdir $path
 cd $path
-echo "" > poc.txt
+echo "Te fuiste recontra hackeado xd" > poc.txt
 cd C:\Users\Juan\Desktop\Perseus\files
